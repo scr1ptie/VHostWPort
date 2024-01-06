@@ -6,6 +6,8 @@ Normally, we are unable to add port information to the `/etc/hosts` file as you 
 
 So, this simple bash script configures and starts a reverse proxy using apache which will allow to map target that have IP:PORT.
 
+The script configuration is very basic and would have some little drawbacks, but it does the job.
+
 ### Requirements 
 Just having `apache2` installed should allow this script to configure the reverse proxy with no issues
 
