@@ -1,4 +1,4 @@
-# VHostWPort
+# VHostWPort - Virtual Hosts with Port
 
 This is just an ease-of-life script for local domain name resolution that includes port information as well.
 
