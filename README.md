@@ -16,5 +16,10 @@ Update this in both the `<VirtualHost *:80>` and `<VirtualHost *:443>` configura
 
 If Needed you can add more than one domain/vhost by adding multiple `ServerName` directive.
 
+### Usage
+```sh
+./VHostWPort.sh 137.37.37.1:1337
+```
+
 ### Discord
 Feel free to reach out to me on discord if there are any issues. My ID is `scriptie`
