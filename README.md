@@ -10,7 +10,7 @@ So, this simple bash script configures and starts a reverse proxy using apache w
 Just having `apache2` installed should allow this script to configure the reverse proxy with no issues
 
 ### Setup
-Modify the `ServerName` directive in the `VHostWPort.sh` script with the name the domain/vhost you need to resolve to.
+Modify the `ServerName` directive in the `VHostWPort.sh` script (Line 19 & 36) with the name the domain/vhost you need to resolve to.
 
 Update this in both the `<VirtualHost *:80>` and `<VirtualHost *:443>` configuration nodes.
 
