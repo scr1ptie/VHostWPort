@@ -16,7 +16,7 @@ Add the domain/vhost in `/etc/hosts` as you usually would and point them to loca
 
 ### Usage
 ```sh
-./VHostWPort.sh 137.37.37.1:1337
+./VHostWPort.sh 137.33.33.7:1337
 ```
 
 ### Discord
