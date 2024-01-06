@@ -16,8 +16,7 @@ sudo a2enmod proxy proxy_ajp proxy_http rewrite deflate headers proxy_balancer p
 
 virtual_host_content=$(cat <<EOF
 <VirtualHost *:80>
-    ServerName domain1.dev
-    #ServerName domain2.dev
+    ServerAlias *
     ProxyPreserveHost On
     
     ProxyPass / http://$url/
@@ -28,13 +27,11 @@ virtual_host_content=$(cat <<EOF
 </VirtualHost>
 
 <VirtualHost *:443>
-
     SSLEngine on
     SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem
     SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
 
-    ServerName domain1.dev
-    #ServerName domain2.dev
+    ServerAlias *
     ProxyPreserveHost On
     
     SSLProxyEngine on
