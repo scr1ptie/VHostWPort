@@ -12,6 +12,8 @@ The script configuration is very basic and would have some little drawbacks, but
 Just having `apache2` installed should allow this script to configure the reverse proxy with no issues
 
 ### Setup
+Add the domain/vhost in `/etc/hosts` pointing to localhost
+
 Modify the `ServerName` directive in the `VHostWPort.sh` script (Line 19 & 36) with the name the domain/vhost you need to resolve to.
 
 Update this in both the `<VirtualHost *:80>` and `<VirtualHost *:443>` configuration nodes.
